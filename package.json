@@ -1,0 +1,57 @@
+{
+  "name": "bindazboy",
+  "version": "1.1.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node public/app.js",
+    "dev": "nodemon -L src/app.ts",
+    "build": "rimraf ./public && tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "basic-ftp": "^5.0.3",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "email-validator": "^2.0.4",
+    "express": "^4.18.1",
+    "firebase-admin": "^11.4.1",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.0",
+    "multer": "^1.4.5-lts.1",
+    "multer-ftp": "^1.2.0",
+    "nodemailer": "^6.9.0",
+    "otplib": "^12.0.1",
+    "pg": "^8.7.3",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^5.0.1",
+    "socket.io": "^4.5.4",
+    "typeorm": "^0.2.45",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.15",
+    "@types/jsonwebtoken": "^9.0.0",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^16.11.43",
+    "@types/nodemailer": "^6.4.7",
+    "@types/otplib": "^10.0.0",
+    "@types/pg": "^8.6.6",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.8.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kesavaraja69/blogapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kesavaraja69/blogapp/issues"
+  },
+  "homepage": "https://github.com/kesavaraja69/blogapp#readme",
+  "description": ""
+}

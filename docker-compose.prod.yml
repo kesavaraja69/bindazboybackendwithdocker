@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  nginx:
+    ports:
+      - '80:80'
+      - '443:443'
+  node-app:
+    build:
+      context: .
+      target: production
+      # args:
+      #   - NODE_ENV=production
+    environment:
+      - NODE_ENV=production
+    command: node public/app.js
